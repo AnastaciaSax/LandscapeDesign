@@ -1,0 +1,11 @@
+D:\Uni\software testin'\lab2\LandscapeDesign.Core\LandscapeDesign.Core\bin\Debug\net8.0\LandscapeDesign.Core.deps.json
+D:\Uni\software testin'\lab2\LandscapeDesign.Core\LandscapeDesign.Core\bin\Debug\net8.0\LandscapeDesign.Core.dll
+D:\Uni\software testin'\lab2\LandscapeDesign.Core\LandscapeDesign.Core\bin\Debug\net8.0\LandscapeDesign.Core.pdb
+D:\Uni\software testin'\lab2\LandscapeDesign.Core\LandscapeDesign.Core\obj\Debug\net8.0\LandscapeDesign.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Uni\software testin'\lab2\LandscapeDesign.Core\LandscapeDesign.Core\obj\Debug\net8.0\LandscapeDesign.Core.AssemblyInfoInputs.cache
+D:\Uni\software testin'\lab2\LandscapeDesign.Core\LandscapeDesign.Core\obj\Debug\net8.0\LandscapeDesign.Core.AssemblyInfo.cs
+D:\Uni\software testin'\lab2\LandscapeDesign.Core\LandscapeDesign.Core\obj\Debug\net8.0\LandscapeDesign.Core.csproj.CoreCompileInputs.cache
+D:\Uni\software testin'\lab2\LandscapeDesign.Core\LandscapeDesign.Core\obj\Debug\net8.0\LandscapeDesign.Core.dll
+D:\Uni\software testin'\lab2\LandscapeDesign.Core\LandscapeDesign.Core\obj\Debug\net8.0\refint\LandscapeDesign.Core.dll
+D:\Uni\software testin'\lab2\LandscapeDesign.Core\LandscapeDesign.Core\obj\Debug\net8.0\LandscapeDesign.Core.pdb
+D:\Uni\software testin'\lab2\LandscapeDesign.Core\LandscapeDesign.Core\obj\Debug\net8.0\ref\LandscapeDesign.Core.dll
