@@ -20,7 +20,7 @@ jobs:
       # Step 1: Clone the repo code onto the runner
       - uses: actions/checkout@v4
 
-      # Step 2: Install .NET SDK 
+      # Step 2: Install .NET SDK
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
@@ -37,3 +37,15 @@ jobs:
       # Step 5: Run unit tests (xUnit) and display output
       - name: Test
         run: dotnet test --no-build --verbosity normal --configuration Release
+
+      # === CD : Publish and upload artifact ===
+      # Step 6: Create a publishable folder (ready for deployment)
+      - name: Publish application
+        run: dotnet publish --configuration Release --output ./publish
+
+      # Step 7: Save the published folder as a downloadable artifact
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: published-app        # Name of the artifact
+          path: ./publish            # Folder to upload
