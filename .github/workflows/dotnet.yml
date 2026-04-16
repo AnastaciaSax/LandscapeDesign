@@ -1,0 +1,39 @@
+# Name of the workflow
+name: CI for LandscapeDesign
+
+# Events that trigger the workflow
+on:
+  push:
+    branches: [ main ]      # Runs when code is pushed to main branch
+  pull_request:
+    branches: [ main ]      # Runs when a pull request targets main branch
+
+# Defines the jobs to run
+jobs:
+  # Job identifier
+  build-and-test:
+    # Virtual machine environment
+    runs-on: ubuntu-latest
+
+    # Sequence of tasks to execute
+    steps:
+      # Step 1: Clone the repo code onto the runner
+      - uses: actions/checkout@v4
+
+      # Step 2: Install .NET SDK 
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.x
+
+      # Step 3: Restore NuGet packages (dependencies like Moq, xUnit)
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # Step 4: Compile the project without restoring
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
+
+      # Step 5: Run unit tests (xUnit) and display output
+      - name: Test
+        run: dotnet test --no-build --verbosity normal --configuration Release
